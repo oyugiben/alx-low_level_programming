@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-        int alph;
+	int alph;
 
-        for (alph = 'z'; alph >= 'a'; alph--)
-                putchar(alph);
-        putchar(\n);
-        return (0);
+	for (alph = 'z'; alph >= 'a'; alph--)
+		putchar(alph);
+	putchar('\n');
+	return (0);
 }

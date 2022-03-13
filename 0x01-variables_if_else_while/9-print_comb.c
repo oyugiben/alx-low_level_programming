@@ -7,10 +7,16 @@
  */
 int main(void)
 {
-        int alph;
 
-        for (alph = 0; alph <= 9; alph++)
-                putchar(alph, );
-        putchar(\n);
-        return (0);
+	for (int i = 0; i <= 9; i++)
+	{
+		putchar(i + '0');
+		if (i != 9)
+		{
+		putchar(',');
+		putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }

@@ -7,10 +7,22 @@
  */
 int main(void)
 {
-        int alph;
+	char ch = 'a';
+	int i = 0;
 
-        for (alph = 'a'; alph <= 'z'; alph++)
-                putchar(alph);
-        putchar(\n);
-        return (0);
+	while (i < 16)
+	{
+		if (i < 10)
+		{
+			putchar(i + '0');
+		}
+		else
+		{
+		    putchar(ch);
+		    ch++;
+		}
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }

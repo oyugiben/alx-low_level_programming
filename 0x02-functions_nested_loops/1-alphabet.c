@@ -8,13 +8,6 @@
  */
 int main(void)
 {
-	int x = 'a';
-
-	while (x <= 'z')
-	{
-		_putchar(x);
-		x++;
-	}
-	_putchar('\n');
+	print_alphabet.c();
 	return (0);
 }

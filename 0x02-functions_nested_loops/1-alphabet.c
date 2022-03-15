@@ -1,13 +1,19 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - check the code
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	int x = 'a';
+
+	while (x <= 'z')
+	{
+		_putchar(x);
+		x++;
+	}
+	_putchar('\n');
 	return (0);
 }

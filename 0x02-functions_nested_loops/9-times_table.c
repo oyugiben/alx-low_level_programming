@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,6 +12,7 @@ void times_table(void)
 	int j;
 	int k;
 	int f;
+	int l;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -25,8 +26,9 @@ void times_table(void)
 			} else
 			{
 				f = k / 10;
+				l = k % 10;
 				_putchar(f);
-				print_last_digit(k);
+				_putchar(l);
 			}
 			if (j < 9)
 			{

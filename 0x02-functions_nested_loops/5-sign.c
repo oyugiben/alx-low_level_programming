@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_sign will print out to sts output the sign of an interger
+ * print_sign - will print out to sts output the sign of an interger
  * @n: the interger to be checked
  *
  * Return: 1 if positive, 0 if 0 and -1 if negative
@@ -17,7 +17,7 @@ int print_sign(int n)
 	{
 		_putchar('0');
 		return (0);
-	}else
+	} else
 	{
 		_putchar('-');
 		return (-1);

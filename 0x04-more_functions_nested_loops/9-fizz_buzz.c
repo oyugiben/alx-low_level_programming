@@ -15,7 +15,6 @@ int main(void)
 		if (i % 15 == 0)
 		{
 			printf("FizzBuzz");
-			break;
 		}
 		else if (i % 5 == 0)
 		{
@@ -30,5 +29,4 @@ int main(void)
 			printf("%i ", i);
 		}
 	}
-	return (0);
 }

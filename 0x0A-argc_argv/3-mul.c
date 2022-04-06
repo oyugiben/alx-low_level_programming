@@ -1,30 +1,23 @@
+#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-#include <stslib.h>
 
 /**
- * main -Entry point
- * @argc: number of cl arguments
- * @*argv[]: strings of cl arguments
- *
- * Return: Always 0
+ * main - prints the multiplication of two integers
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 if true, 1 if false
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
-	int mul;
-
-	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		i = atoi(argv[1]);
-		j = atoi(argv[2]);
-		mul = i * j;
-		printf("%d\n", mul);
-		exit(EXIT_SUCCESS);
-	}
+int a, b;
+if (argc == 3)
+{
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+printf("%d\n", a *b);
+return (0);
+}
+printf("Error\n");
+return (1);
 }

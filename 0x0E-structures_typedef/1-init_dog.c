@@ -4,8 +4,8 @@
  * init_dog - initializes variable of type struct dog
  * @d: struct dog pointer
  * @name: name of the dog
- * age: dog age
- * owner: owner's name
+ * @age: dog age
+ * @owner: owner's name
  *
  * Return: Always 0;
  */

@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #ifndef DOG_STRUCT
 #define DOG_STRUCT
 
@@ -15,5 +18,14 @@ struct dog
 	char *owner;
 	float age;
 };
+
+#endif
+
+
+
+#ifndef DIRECTIVES
+#define DIRECTIVES
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif

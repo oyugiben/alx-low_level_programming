@@ -10,7 +10,7 @@
  * @owner: dog's owner
  * @age: dog's age
  *
- * Used to buld a dog type
+ * Used to buld a dog type and create type_def dog_t
  */
 struct dog
 {

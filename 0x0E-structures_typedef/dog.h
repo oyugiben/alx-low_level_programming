@@ -1,26 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#ifndef DOG_STRUCT
-#define DOG_STRUCT
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct dog - Builds a dog type
- * @name: dog's name
- * @owner: dog's owner
- * @age: dog's age
- *
- * Used to buld a dog type and create type_def dog_t
+  * dog_t - Typedef for struct dog 
+  */
+typedef struct dog dog_t;
+
+/**
+ *  struct dog - struct that stores some information of a dog 
+ *  @name: name of the dog 
+ *  @age: age of the dog 
+ *  @owner: owner of the dog 
+ *   
+ *    Description: struct called "dog" that stores its name, its age 
+ *    and the name of its owner. 
  */
 struct dog
-{
+{	
 	char *name;
-	char *owner;
 	float age;
-} dog_t;
+	char *owner;
+};
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif
 
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
+
